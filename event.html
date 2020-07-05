@@ -1,0 +1,339 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    
+
+    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% static 'index.html' %}">Home</a></span> <span>Event</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Events</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--    <section class="ftco-section">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--        	<div class="col-md-4 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry align-self-stretch">-->
+<!--              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-1.jpg');">-->
+<!--              </a>-->
+<!--              <div class="text p-4 d-block">-->
+<!--              	<div class="meta mb-3">-->
+<!--                  <div><a href="#">Sep. 10, 2018</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>-->
+<!--                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+<!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-4 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry align-self-stretch">-->
+<!--              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-2.jpg');">-->
+<!--              </a>-->
+<!--              <div class="text p-4 d-block">-->
+<!--              	<div class="meta mb-3">-->
+<!--                  <div><a href="#">Sep. 10, 2018</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>-->
+<!--                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+<!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-4 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry align-self-stretch">-->
+<!--              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-3.jpg');">-->
+<!--              </a>-->
+<!--              <div class="text p-4 d-block">-->
+<!--              	<div class="meta mb-3">-->
+<!--                  <div><a href="#">Sep. 10, 2018</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>-->
+<!--                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+<!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-4 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry align-self-stretch">-->
+<!--              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-4.jpg');">-->
+<!--              </a>-->
+<!--              <div class="text p-4 d-block">-->
+<!--              	<div class="meta mb-3">-->
+<!--                  <div><a href="#">Sep. 10, 2018</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>-->
+<!--                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+<!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-4 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry align-self-stretch">-->
+<!--              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-5.jpg');">-->
+<!--              </a>-->
+<!--              <div class="text p-4 d-block">-->
+<!--              	<div class="meta mb-3">-->
+<!--                  <div><a href="#">Sep. 10, 2018</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>-->
+<!--                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+<!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-4 d-flex ftco-animate">-->
+<!--          	<div class="blog-entry align-self-stretch">-->
+<!--              <a href="blog-single.html" class="block-20" style="background-image: url('images/event-6.jpg');">-->
+<!--              </a>-->
+<!--              <div class="text p-4 d-block">-->
+<!--              	<div class="meta mb-3">-->
+<!--                  <div><a href="#">Sep. 10, 2018</a></div>-->
+<!--                  <div><a href="#">Admin</a></div>-->
+<!--                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>-->
+<!--                </div>-->
+<!--                <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>-->
+<!--                <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>-->
+<!--                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="row mt-5">-->
+<!--          <div class="col text-center">-->
+<!--            <div class="block-27">-->
+<!--              <ul>-->
+<!--                <li><a href="#">&lt;</a></li>-->
+<!--                <li class="active"><span>1</span></li>-->
+<!--                <li><a href="#">2</a></li>-->
+<!--                <li><a href="#">3</a></li>-->
+<!--                <li><a href="#">4</a></li>-->
+<!--                <li><a href="#">5</a></li>-->
+<!--                <li><a href="#">&gt;</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+   <section class="ftco-section bg-light">
+       <div class="container">
+           <div class="row justify-content-center mb-5 pb-3">
+               <div class="col-md-7 heading-section ftco-animate text-center">
+                   <h2 class="mb-4">Our Events</h2>
+               </div>
+           </div>
+           <div class="row justify-content-center">
+               <div class="col-md-4 d-flex ftco-animate">
+                   <div class="blog-entry align-self-stretch">
+                       <div class="block-20" style="background-image: url('images/event-1.jpg');">
+                       </div>
+                       <div class="text p-4 d-block text-center">
+                           <div class="meta mb-3">
+                               <div><p>July 31, 2020</p></div>
+                               <div><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}">Admin</a></div>
+                           </div>
+                           <h3 class="heading mb-4"><a href="#">RHA 30 Million</a></h3>
+                           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                           <p><a href="donate.html" class="float-left">Donate Now <i class="ion-ios-arrow-forward"></i></a> <a href="{% static '#Event1_Modal' %}" class="float-right" data-toggle="modal">View More</a></p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4 d-flex ftco-animate">
+                   <div class="blog-entry align-self-stretch">
+                       <div class="block-20" style="background-image: url('images/Event/NawaazishCrewxActionForAutism/Image1.jpg');">
+                       </div>
+                       <div class="text p-4 d-block text-center">
+                           <div class="meta mb-3">
+                               <div><p>July 31, 2020</p></div>
+                               <div><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}">Admin</a></div>
+                           </div>
+                           <h3 class="heading mb-4"><a >Action For Autism</a></h3>
+                           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                           <p><a href="{% static '#Event2_Modal' %}" data-toggle="modal"class="float-right">View More</a></p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4 d-flex ftco-animate">
+                   <div class="blog-entry align-self-stretch">
+                       <div class="block-20" style="background-image: url('images/Event/NawaazishCrewxRobinHoodArmy/Image7.jpg');">
+                       </div>
+                       <div class="text p-4 d-block text-center">
+                           <div class="meta mb-3">
+                               <div><p>July 31, 2020</p></div>
+                               <div><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}">Admin</a></div>
+                           </div>
+                           <h3 class="heading mb-4"><a>Robin Hood Army</a></h3>
+                           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                           <p><a href="{% static '#Event3_Modal' %}" data-toggle="modal" class="float-right">View More</a></p>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+   </section>
+    <!--Footer-->
+
+    <footer class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Us</h2>
+              <p>We are Nawaazish crew - a group of college students from different realms of life, on a mission to contribute to a society of equal opportunities, an environment one and all.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate Social"><a href="{% static 'https://twitter.com/NawaazishCrew' %}" target="_blank"><span class="icon-twitter "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.facebook.com/Nawaazish-Crew-107099397604923/' %}" target="_blank"><span class="icon-facebook "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}" target="_blank"><span class="icon-instagram "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.youtube.com/channel/UCRYRzx9eX4enktHapkhSy6Q' %}" target="_blank"><span class="icon-youtube "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.linkedin.com/company/nawaazish-crew' %}" target="_blank"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--<div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% static 'index.html' %}" class="py-2 d-block">Home</a></li>
+                <li><a href="{% static 'about.html' %}" class="py-2 d-block">About</a></li>
+                <li><a href="{% static 'donate.html' %}" class="py-2 d-block">Donate</a></li>
+                <li><a href="{% static 'event.html' %}" class="py-2 d-block">Events</a></li>
+                <li><a href="{% static 'meet-our-crew.html' %}" class="py-2 d-block">Meet Our Crew</a></li>
+               <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
+               </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Contact Us</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><a href="{% static 'tel://+91-8800202773' %}"><span class="icon icon-phone"></span><span class="text">+91-8800202773</span></a></li>
+              <li><a href="{% static 'mailto:nawaazishcrew@gmail.com' %}"><span class="icon icon-envelope"></span><span class="text">nawaazish.crew@gmail.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+       <p>Copyright <script>document.write(new Date().getFullYear())</script> All rights reserved | <a href="#" target="_blank">Nawaazish</a>
+       </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!--Modal-->
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal" tabindex="-1" role="dialog" id="Event1_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">RHA 30 Million</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal" tabindex="-1" role="dialog" id="Event2_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Action For Autism</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal" tabindex="-1" role="dialog" id="Event3_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Robin Hood Army</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- loader -->
+
+{% endblock %}

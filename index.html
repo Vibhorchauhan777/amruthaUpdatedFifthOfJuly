@@ -1,0 +1,383 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+  
+{% block content %}
+
+  <!--Navbar-->
+
+    <!-- END nav -->
+
+
+    <!-- Modal for Be A Volunteer -->
+
+
+    
+
+  <!--Home-->
+
+    <div class="hero-wrap" style="background-image: url('images/bg_7.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-counter ftco-intro" id="section-counter">
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-2 align-items-stretch">
+              <div class="text">
+              	<h3 class="mb-4">Donate Money</h3>
+              	<p>Experience the joy of giving by donating to our cause and the diverse causes we work for. Support us in our mission and help your friends make a difference too.</p>
+              	<p><a href="{% static 'donate.html' %}" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
+              </div>
+            </div>
+          </div>
+
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Make Donation</h3>
+                <p>Experience the joy of giving by donating to our cause and the diverse causes we work for. Support us in our mission and help your friends make a difference too.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Become A Volunteer</h3>
+                <p>We Nawaazish crew are recruiting more people to our cause. A change that we want in the society, for us for the people around us.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Sponsorship</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+
+
+    <!--Recent Donations-->
+
+    <!--<section class="ftco-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Latest Donations</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="img" style="background-image: url(images/person_1.jpg);"></div>
+        				<div class="info ml-4">
+        					<h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
+        					<span class="position">Donated Just now</span>
+        					<div class="text">
+		        				<p>Donated <span>$300</span> for <a href="#">Children Needs Food</a></p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="img" style="background-image: url(images/person_2.jpg);"></div>
+        				<div class="info ml-4">
+        					<h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
+        					<span class="position">Donated Just now</span>
+        					<div class="text">
+		        				<p>Donated <span>$150</span> for <a href="#">Children Needs Food</a></p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="img" style="background-image: url(images/person_3.jpg);"></div>
+        				<div class="info ml-4">
+        					<h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
+        					<span class="position">Donated Just now</span>
+        					<div class="text">
+		        				<p>Donated <span>$250</span> for <a href="#">Children Needs Food</a></p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </section>-->
+
+
+
+
+    <!--Blog-->
+
+    <!--<section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Recent from blog</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">Sept 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mt-3"><a href="#">Hurricane Irma has devastated Florida</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">Sept 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mt-3"><a href="#">Hurricane Irma has devastated Florida</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<div class="meta mb-3">
+                  <div><a href="#">Sept 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mt-3"><a href="#">Hurricane Irma has devastated Florida</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <!--Latest Events-->
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Latest Events</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 d-flex ftco-animate">
+              <div class="blog-entry align-self-stretch">
+                  <div class="block-20" style="background-image: url('images/event-1.jpg');">
+                  </div>
+                  <div class="text p-4 d-block text-center">
+                      <div class="meta mb-3">
+                          <div><p>July 31, 2020</p></div>
+                          <div><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}">Admin</a></div>
+                      </div>
+                      <h3 class="heading mb-4"><a href="#">Mission भोज</a></h3>
+                      <p>Nawaazish Crew's fundraising campaign Mission भोज(Feast)  is a mission to provide dry ration to the daily homeless, wage workers, migrant laborers and the financially poor.</p>
+                      <p><a href="{% static 'donate.html' %}" class="float-left">Donate Now <i class="ion-ios-arrow-forward"></i></a>
+                      <p><a href="{% static '#Event1_Modal' %}" class="float-right" data-toggle="modal">View More <i class="ion-ios-arrow-forward"></i></a></p>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Modal-->
+         <div class="modal" tabindex="-1" role="dialog" id="Event1_Modal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Mission भोज</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Due to the complete COVID-lockdown across the country, daily wage workers are left with no work & scarce government support. 
+                            The ones who are the only earning member of the family are affected the most.</p>
+                            
+                          <p>Things ahead seem to be getting worse, as the lockdown has left some wrecking after-effects on the daily wage sector.</p> 
+                            
+                          <p>However, our Nawaazish Crew, a non-profit organization based in Delhi, is on a mission  help the needy, using an iterative model: 📈
+                            <br />
+                            1. Our organization procures supplies from wholesalers at a cheaper rate. 
+                            <br />
+                            2. We then hand-over the ration to our ground delivery partners. 
+                            <br />
+                            3. Our delivery partners pick up the packets from the wholesaler and provide ration to the ones in need.</p> 
+                            
+                            
+                          <p>What will the ration packet consist of?
+                            <br />
+                            The list includes, but isn't limited to:
+                            <br />
+                            1. Atta 
+                            <br />
+                            2. Chawal
+                            <br />
+                            3. Channa dal</p>
+                            
+                          <p>Each pack is procured at a cost ranging between ₹450 & ₹500/-</p> 
+                            
+                          <p>A contribution of ₹500 would provide a family of 4 with 7kg Atta, 7kg Rice, & 3.5kg Daal that usually lasts for 14 days.</p>
+                            
+                            
+                          <p>To most of us, ₹500 might seem like a trivial amount, but it holds the power of feeding a family in need, & in uniting us as human beings. 🌠</p>
+                            
+                          <p><a href="{% static 'donate.html' %}"><strong>DONATE NOW<strong></a></p> 
+                          <p>Information : </p>
+                            
+                          <p>All donors get an appreciation card for their contributions. 🌸</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+    <!--Be a Volunteer-->
+    <section class="ftco-counter ftco-intro" id="section-counter">
+    	<div class="container">
+    		<div class="row no-gutters">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-3 align-items-stretch">
+              <div class="text">
+                <h3 class="mb-4">Be a Volunteer</h3>
+                <p>We Nawaazish crew are recruiting more people to our cause. A change that we want in the society, for us for the people around us.</p>
+                <p><a href="{% static 'modalTemplate.html' %}" class="btn btn-white px-3 py-2 mt-2" data-toggle="modal" data-target="#joinUsModal">Be A Volunteer</a></p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+   <!--Footer-->
+
+    <footer class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Us</h2>
+              <p>We are Nawaazish crew - a group of college students from different realms of life, on a mission to contribute to a society of equal opportunities, an environment one and all.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate Social"><a href="{% static 'https://twitter.com/NawaazishCrew' %}" target="_blank"><span class="icon-twitter "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.facebook.com/Nawaazish-Crew-107099397604923/' %}" target="_blank"><span class="icon-facebook "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}" target="_blank"><span class="icon-instagram "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.youtube.com/channel/UCRYRzx9eX4enktHapkhSy6Q' %}" target="_blank"><span class="icon-youtube "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.linkedin.com/company/nawaazish-crew' %}" target="_blank"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--<div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% static 'index.html' %}" class="py-2 d-block">Home</a></li>
+                <li><a href="{% static 'about.html' %}" class="py-2 d-block">About</a></li>
+                <li><a href="{% static 'donate.html' %}" class="py-2 d-block">Donate</a></li>
+                <li><a href="{% static 'event.html' %}" class="py-2 d-block">Events</a></li>
+                <li><a href="{% static 'meet-our-crew.html' %}" class="py-2 d-block">Meet Our Crew</a></li>
+               <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
+               </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Contact Us</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><a href="{% static 'tel://+91-8800202773' %}"><span class="icon icon-phone"></span><span class="text">+91-8800202773</span></a></li>
+              <li><a href="{% static 'mailto:nawaazishcrew@gmail.com' %}"><span class="icon icon-envelope"></span><span class="text">nawaazish.crew@gmail.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+       <p>Copyright <script>document.write(new Date().getFullYear())</script> All rights reserved | <a href="#" target="_blank">Nawaazish</a>
+       </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+{% endblock %}
+

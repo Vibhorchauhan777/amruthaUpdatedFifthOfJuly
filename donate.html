@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <!--Navbar-->
+    
+    <!-- END nav -->
+
+    <div class="hero-wrap" style="background-image: url('images/bg_6.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% static 'index.html' %}">Home</a></span> <span>Donate</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Donations</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-flex mb-sm-3 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-2">
+                <div class="info ml-4">
+                  <h3><a href="{% static 'teacher-single.html' %}">₹25</a></h3>
+                  <span class="position">Donated Just now</span>
+                  <div class="text">
+                    <p>Donated <span>$300</span> for <a href="#">Children Needs Food</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex mb-sm-3 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-2">
+                <div class="info ml-4">
+                  <h3><a href="{% static 'teacher-single.html' %}">₹50</a></h3>
+                  <span class="position">Donated Just now</span>
+                  <div class="text">
+                    <p>Donated <span>$150</span> for <a href="#">Children Needs Food</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex mb-sm-3 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-2">
+                <div class="info ml-4">
+                  <h3><a href="{% static 'teacher-single.html' %}">₹100</a></h3>
+                  <span class="position">Donated Just now</span>
+                  <div class="text">
+                    <p>Donated <span>$250</span> for <a href="#">Children Needs Food</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex mb-sm-3 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-2">
+                <div class="info ml-4">
+                  <h3><a href="{% static 'teacher-single.html' %}">₹500</a></h3>
+                  <span class="position">Donated Just now</span>
+                  <div class="text">
+                    <p>Donated <span>$300</span> for <a href="#">Children Needs Food</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section-3">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-2 align-items-stretch">
+              <div class="text" style="text-align: center;">
+                <h3 class="mb-4">Our Target</h3>
+                <p>Lorem ipsum dior blah blah 10k toh hona hi chahiye</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="progress ftco-animate">
+          <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">70%</div>
+      </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+
+      </div>
+    </section>
+
+
+     <!--Footer-->
+
+     <footer class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Us</h2>
+              <p>We are Nawaazish crew - a group of college students from different realms of life, on a mission to contribute to a society of equal opportunities, an environment one and all.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate Social"><a href="{% static 'https://twitter.com/NawaazishCrew' %}" target="_blank"><span class="icon-twitter "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.facebook.com/Nawaazish-Crew-107099397604923/' %}" target="_blank"><span class="icon-facebook "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.instagram.com/nawaazish.crew/' %}" target="_blank"><span class="icon-instagram "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.youtube.com/channel/UCRYRzx9eX4enktHapkhSy6Q' %}" target="_blank"><span class="icon-youtube "></span></a></li>
+                <li class="ftco-animate Social"><a href="{% static 'https://www.linkedin.com/company/nawaazish-crew' %}" target="_blank"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--<div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% static 'index.html' %}" class="py-2 d-block">Home</a></li>
+                <li><a href="{% static 'about.html' %}" class="py-2 d-block">About</a></li>
+                <li><a href="{% static 'donate.html' %}" class="py-2 d-block">Donate</a></li>
+                <li><a href="{% static 'event.html' %}" class="py-2 d-block">Events</a></li>
+                <li><a href="{% static 'meet-our-crew.html' %}" class="py-2 d-block">Meet Our Crew</a></li>
+                <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact Us</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><a href="{% static 'tel://+91-8800202773' %}"><span class="icon icon-phone"></span><span class="text">+91-8800202773</span></a></li>
+	                <li><a href="{% static 'mailto:nawaazishcrew@gmail.com' %}"><span class="icon icon-envelope"></span><span class="text">nawaazish.crew@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+           <p>Copyright <script>document.write(new Date().getFullYear())</script> All rights reserved | <a href="#" target="_blank">Nawaazish</a>
+           </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <!-- loader -->
+{% endblock %}
